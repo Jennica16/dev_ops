@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fancy Login Page</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background: linear-gradient(135deg, #8B5E3B, #D2B48C);
+        }
+        .login-container {
+            background: rgba(255, 255, 255, 0.2);
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+            backdrop-filter: blur(10px);
+            text-align: center;
+            width: 350px;
+        }
+        .login-container h2 {
+            color: #5D4037;
+            margin-bottom: 20px;
+        }
+        .input-box {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border: none;
+            outline: none;
+            border-radius: 5px;
+            font-size: 16px;
+            background: rgba(255, 255, 255, 0.3);
+            color: #5D4037;
+        }
+        .input-box::placeholder {
+            color: #8B5E3B;
+        }
+        .login-btn {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            background: #A67B5B;
+            color: #fff;
+            font-size: 18px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+        .login-btn:hover {
+            background: #6D4C41;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <h2>Login</h2>
+        <input type="text" class="input-box" placeholder="Username">
+        <input type="password" class="input-box" placeholder="Password">
+        <button class="login-btn">Login</button>
+    </div>
+</body>
+</html>
